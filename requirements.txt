@@ -1,0 +1,10 @@
+fastapi
+uvicorn[standard]
+python-multipart
+pydantic-settings
+tensorflow
+tensorflow-hub
+h5py
+numpy
+nats-py
+aiofiles
