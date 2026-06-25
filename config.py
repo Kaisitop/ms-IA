@@ -18,7 +18,7 @@ class Settings(BaseSettings):
     noise_gate: float = 0.015
     alert_confidence_pct: float = 80.0
 
-    nats_servers: str = "nats://localhost:4222"
+    nats_service: str = "nats://localhost:4222"
     nats_subject_audio_ready: str = "eventos.audio.ready"
     bridge_root: str = str(BASE_DIR.parent / "ms-IoT-Bridge")
 

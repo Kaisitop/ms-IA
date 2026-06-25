@@ -39,8 +39,8 @@ async def lifespan(app: FastAPI):
         engine.error_message = str(exc)
         logger.error("No se pudieron cargar los modelos: %s", exc)
 
-    await nats_client.connect(settings.nats_servers)
-    logger.info("NATS conectado: %s", settings.nats_servers)
+    await nats_client.connect(settings.nats_service)
+    logger.info("NATS conectado: %s", settings.nats_service)
 
     if engine.is_ready:
         updater = EventUpdater(nats_client)
