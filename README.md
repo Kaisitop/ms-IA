@@ -1,5 +1,7 @@
 # ms-IA
 
+> **Monorepo:** [README.md](../README.md) · [docs/contexto.md](../docs/contexto.md)
+
 Microservicio de clasificación de audio para CENTINELA (UNEMI).
 
 Usa **YAMNet** (TensorFlow Hub) + clasificador entrenado (`my_yamnet_classifier.h5`) para detectar **disparos** y **gritos** en clips WAV.
